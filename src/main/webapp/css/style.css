@@ -1,0 +1,184 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 20px;
+    color: yellowgreen;
+    background-color: whitesmoke;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/*-------------- header -------------------------- */
+
+header {
+    background-image: linear-gradient(to right top, rgba(2, 33, 64, 0.8) 55%, rgba(45, 95, 93, 0.85)), url("../img/background4.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    margin-left: 70px;
+    margin-top: -10px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    margin-right: 50px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 110%;
+    font-weight: 700;
+    transition: border 1s;
+    padding: 3px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border: 10px solid tomato;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    width: 1140px;
+}
+
+h1 {
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: red;
+    line-height: 135%;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 10px;
+    width: 250px;
+    display: inline-block;
+    text-align: center;
+    transition: all.3s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: turquoise;
+    /* border: 10px solid tomato; */
+}
+
+
+/* --------------------------------------------- */
+
+h2 {
+    text-transform: uppercase;
+    font-size: 250%;
+    font-weight: 400;
+    color: orange;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2::after {
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: rgba(228, 181, 28, 0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.p-long {
+    text-align: center;
+    color: blue;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 75%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+
+section {
+    padding: 50px;
+    background-color: whitesmoke;
+}
+
+.about-picture {
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-picture img {
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid rgb(113, 113, 219);
+    box-shadow: 0px 5px 15px 5px rgb(217, 192, 240);
+    transition: all 0.7s;
+    /* x- y - do mo - do phong rong & màu  */
+    /* filter: brightness(55%) blur(2px); */
+}
+
+.picturetitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: burlywood;
+    transform: translate(-65%, -100%);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.about-picture:hover img,
+.about-picture:active img {
+    filter: brightness(55%) blur(2px);
+}
+
+.about-picture:hover .picturetitle,
+.about-picture:active .picturetitle {
+    transform: translate(-65%, -100%);
+    opacity: 1;
+}
