@@ -6,12 +6,11 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LHV UNIVERSITY</title>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,100&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="vendors/css/grid.css">
+        <link rel="stylesheet" href="css/queries.css">
     </head>
 
     <body>
@@ -32,7 +31,6 @@
                     <a href="#" class="btn">Tham gia với chúng tôi</a>
                 </div>
         </header>
-
         <section class="about-section">
             <div class="row">
                 <h2>Về chúng tôi</h2>
@@ -65,10 +63,11 @@
                         XC
                     </p>
                 </div>
-
             </div>
         </section>
 
     </body>
-
+    <footer>
+        <p>Hoàng Vũ company</p>
+    </footer>
 </html>
